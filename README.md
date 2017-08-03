@@ -1,11 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-* `java6`, 6u45 JDK [(Dockerfile)](https://github.com/cogniteev/docker-oracle-java/blob/master/oracle-java6/Dockerfile)
-* `java7`, 7u80 JDK [(Dockerfile)](https://github.com/cogniteev/docker-oracle-java/blob/master/oracle-java7/Dockerfile)
-* `java8`, `latest`, 8u92 [(Dockerfile)](https://github.com/cogniteev/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
-* `java9`, 9b116 JDK [(Dockerfile)](https://github.com/cogniteev/docker-oracle-java/blob/master/oracle-java9/Dockerfile)
-
-[![ImageLayers.io](https://badge.imagelayers.io/cogniteev%2Foracle-java:latest.svg)](https://imagelayers.io/?images=cogniteev%2Foracle-java:latest,cogniteev%2Foracle-java:java6,cogniteev%2Foracle-java:java7,cogniteev%2Foracle-java:java8,cogniteev%2Foracle-java:java9)
+* `java8`, `latest`, 8u131 [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
+* `java9`, 9ea162 JDK [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java9/Dockerfile)
 
 # Base Docker Image
 
@@ -15,19 +11,19 @@
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/cogniteev/oracle-java/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull cogniteev/oracle-java`
+2. Download [automated build](https://registry.hub.docker.com/u/gizmotronic/oracle-java/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull gizmotronic/oracle-java`
 
 ### Usage
 
-    docker run -it --rm cogniteev/oracle-java
+    docker run -it --rm gizmotronic/oracle-java
 
 #### Run `java`
 
-    docker run -it --rm cogniteev/oracle-java java
+    docker run -it --rm gizmotronic/oracle-java java
 
 #### Run `javac`
 
-    docker run -it --rm cogniteev/oracle-java javac
+    docker run -it --rm gizmotronic/oracle-java javac
 
 # LICENSE
 

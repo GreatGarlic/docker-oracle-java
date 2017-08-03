@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `java8`, `latest`, 8u131 [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
+* `java8`, `latest`, 8u144 [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
 * `java9`, 9ea162 JDK [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java9/Dockerfile)
 
 # Base Docker Image

@@ -1,4 +1,10 @@
-# Supported tags and respective `Dockerfile` links
+# Oracle Java 8/9 on Ubuntu
+
+To use these images, you must accept the
+[Oracle Binary Code License Agreement](http://www.oracle.com/technetwork/java/javase/terms/license/index.html)
+for Java SE.
+
+## Supported tags and respective `Dockerfile` links
 
 * `java8`, `latest`, `8u161` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
 * `java9`, `9.0.4` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java9/Dockerfile)

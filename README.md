@@ -6,7 +6,7 @@ for Java SE.
 
 ## Supported tags and respective `Dockerfile` links
 
-* `java8`, `latest`, `8u161` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
+* `java8`, `latest`, `8u171` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
 
 ## Deprecated tags
 

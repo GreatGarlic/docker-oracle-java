@@ -8,7 +8,7 @@
 # Pull base image.
 FROM ubuntu:16.04
 
-ARG version=8u161-1~webupd8~0
+ARG version=8u171-1~webupd8~1
 
 # Install Java.
 RUN \

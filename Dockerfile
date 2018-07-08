@@ -1,1 +1,1 @@
-oracle-java8/Dockerfile
+oracle-java10/Dockerfile

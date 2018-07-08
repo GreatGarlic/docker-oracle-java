@@ -7,6 +7,11 @@ for Java SE.
 ## Supported tags and respective `Dockerfile` links
 
 * `java8`, `latest`, `8u161` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java8/Dockerfile)
+
+## Deprecated tags
+
+Java 9 has reached end of life.
+
 * `java9`, `9.0.4` [(Dockerfile)](https://github.com/gizmotronic/docker-oracle-java/blob/master/oracle-java9/Dockerfile)
 
 # Base Docker Image

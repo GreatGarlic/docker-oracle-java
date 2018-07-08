@@ -17,9 +17,6 @@ RUN \
   echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   add-apt-repository -y ppa:linuxuprising/java && \
   apt-get update && \
-  true
-
-RUN \
   apt-get install -y oracle-java10-installer=${version} && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk10-installer

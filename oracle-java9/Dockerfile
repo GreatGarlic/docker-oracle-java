@@ -21,14 +21,14 @@ ARG version=9.0.4-1~webupd8~0
 #   rm -rf /var/lib/apt/lists/* && \
 #   rm -rf /var/cache/oracle-jdk11-installer
 
-RUN apt update \
-    && apt upgrade \
+RUN apt-get update \
+    && apt-get upgrade \
 	&& apt-get install -y apt-utils \
     && apt-get install -y software-properties-common \
     && add-apt-repository ppa:linuxuprising/java \
     && echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \
     && echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections \
-    && apt update \
+    && apt-get update \
     && apt-get install oracle-java11-installer \
     && apt-get install oracle-java11-set-default 
 # Define working directory.

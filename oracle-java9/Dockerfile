@@ -23,6 +23,7 @@ ARG version=9.0.4-1~webupd8~0
 
 RUN apt update \
     && apt upgrade \
+	&& apt-get install -y apt-utils \
     && apt-get install -y software-properties-common \
     && add-apt-repository ppa:linuxuprising/java \
     && echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \

@@ -11,17 +11,22 @@ FROM ubuntu:16.04
 ARG version=9.0.4-1~webupd8~0
 
 # Install Java.
-RUN \
-  apt-get update && \
-  apt-get install -y software-properties-common && \
-  #echo oracle-java9-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
-  add-apt-repository -y ppa:linuxuprising/java && \
-  apt-get update && \
-  apt-get install -y oracle-java11-installer && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm -rf /var/cache/oracle-jdk11-installer
+# RUN \
+#   apt-get update && \
+#   apt-get install -y software-properties-common && \
+#   #echo oracle-java9-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
+#   add-apt-repository -y ppa:linuxuprising/java && \
+#   apt-get update && \
+#   apt-get install -y oracle-java11-installer && \
+#   rm -rf /var/lib/apt/lists/* && \
+#   rm -rf /var/cache/oracle-jdk11-installer
 
-
+RUN apt update \
+    && apt upgrade \
+    && add-apt-repository ppa:linuxuprising/java \
+    && apt update \
+    && apt-get install oracle-java11-installer \
+    && apt-get install oracle-java11-set-default 
 # Define working directory.
 WORKDIR /data
 
